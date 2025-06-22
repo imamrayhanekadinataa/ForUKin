@@ -1,0 +1,78 @@
+@media (min-width: 300px) and (max-width: 640px) {
+    .ml1 {
+      margin-top: 15%;
+    }
+  
+    .kontener3 {
+      padding-top: 40px;
+      gap: 16px;
+    }
+  
+    .toggle-button {
+      top: 8px;
+      left: 6px;
+      padding: 8px;
+    }
+  
+    .hamburger {
+      width: 23px;
+      height: 19px;
+    }
+  
+    .hamburger span {
+      height: 3px;
+    }
+  
+    .dropdown {
+      top: 52px;
+      left: 12px;
+      gap: 7px;
+      width: max-content;
+    }
+  
+    .dropdown button {
+      width: 27px;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+  
+    .btn-kembali {
+      font-size: 24px;
+      top: 16px;
+      left: 12px;
+    }
+  
+    .judul_halaman {
+      line-height: 80px;
+      font-size: 1.5rem;
+    }
+  
+    .judul_ini {
+      top: 8px;
+      font-size: 1.5rem;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .isi-halaman {
+      font-size: 1rem;
+      padding: 0 15px;
+      max-width: 100%;
+    }
+  
+    #kontener3 #waktu {
+      font-size: 1.5rem;
+    }
+  
+    .ucapan {
+      font-size: 1.3rem;
+    }
+  
+    .isiucapan {
+      font-size: 1rem;
+    }
+  
+    .galeri {
+      column-count: 4;
+    }
+  }

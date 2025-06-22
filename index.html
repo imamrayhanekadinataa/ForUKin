@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Adore U</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hbd.css" />
+    <link rel="stylesheet" href="css/time.css" />
+    <link rel="stylesheet" href="css/responsif.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="formBalasanModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="tutupFormBalasan()">&times;</span>
+        <h2>Feedback</h2>
+        <form action="https://formspree.io/f/manoolkv" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <textarea
+            name="pesan"
+            placeholder="Message..."
+            rows="4"
+            required
+          ></textarea>
+          <br />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="kontener2" id="kontener2">
+      <h1>Halo Lintang Kinasih</h1>
+      <button class="tombol" id="tombol">Sini</button>
+    </div>
+
+    <div class="kontener3" id="kontener3" style="display: none">
+      <video id="video1" autoplay muted loop class="backgroundVideo"></video>
+
+      <button class="toggle-button" onclick="toggleDropdown()">
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </button>
+
+      <div class="dropdown" id="dropdownMenu" style="display: none">
+        <button onclick="PindahKeHalaman(0)" class="btn">🩷</button>
+        <button onclick="PindahKeHalaman(1)" class="btn">💗</button>
+        <button onclick="PindahKeHalaman(2)" class="btn">💝</button>
+      </div>
+
+      <h1 class="judul_ini">Hi, Lintang Kinasih</h1>
+      <button class="tombol-modal" onclick="tampilkanFormBalasan()">
+        <i class="fas fa-envelope"></i>
+      </button>
+
+      <div class="preview-galeri" onclick="PindahKeHalaman(3)">
+        <img src="galeri/gambar1.png" alt="Preview" />
+        <img src="galeri/gambar2.png" alt="Preview" />
+        <img src="galeri/gambar3.png" alt="Preview" />
+      </div>
+      <p class="preview-teks">Galeri</p>
+
+      <div id="waktu">
+        <h1 class="ml1">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters" id="tanggal"></span>
+            <span class="line line2"></span>
+          </span>
+        </h1>
+        <p class="ml2" id="jamwkwk"></p>
+      </div>
+
+      <div class="isi-halaman">
+        <h1 id="waktu"></h1>
+        <h1 class="ucapan" id="ucapan"></h1>
+        <p class="isiucapan" id="isiucapan"></p>
+      </div>
+    </div>
+
+    <div class="kontener" id="kontener">
+      <video id="video2" autoplay muted loop class="backgroundVideo"></video>
+
+      <div class="dalemnya_kontener">
+        <section class="halaman1 dalemnya_halaman">
+          <button class="btn-kembali" onclick="kembaliKeMenu()">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <h1 class="judul_halaman">I</h1>
+          <img
+            src="gambar/gambar1.jpg"
+            alt="Gambar 1"
+            class="gambar"
+            style="width: 400px; height: 400px"
+          />
+          <div class="ucapan1">
+            <p class="isiucapan1">
+              Terimakasih sudah ada dan hadir di hidupku, teruslah hidup dan berkembang ya.
+              Terimakasih sudah menjadi secercah cahaya yang menerangi gelapnya jalan yang kulalui, seperti namamu Lintang.
+              Dimanapun kamu, aku selalu mendukungmu dan menyanyangimu.
+            </p>
+          </div>
+        </section>
+
+        <section class="halaman2 dalemnya_halaman">
+          <button class="btn-kembali" onclick="kembaliKeMenu()">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <h1 class="judul_halaman">Love</h1>
+          <img
+            src="gambar/gambar2.jpg"
+            alt="Gambar 2"
+            class="gambar"
+            style="width: 400px; height: 400px"
+          />
+          <div class="ucapan2">
+            <p class="isiucapan2">
+              Apapun yang terjadi, aku selalu support kamu terus. Semoga hal yang kamu impikan dapat tercapai dengan baik ya.
+              Kalo dunia jahat ke kamu, aku jamin aku bakal jadi salah atau satu orang yang melawan dunia itu. Aku janji aku bakal jadi orang yang mendukung kamu baik suka dan duka.
+              Baik buruknya kamu akan selalu kuterima. Teruslah beprogres sembari aku juga berprogres untuk serius menjalin kehidupan bersama kamu. Semoga bahagia menyertaimu.
+            </p>
+          </div>
+        </section>
+
+        <section class="halaman3 dalemnya_halaman">
+          <button class="btn-kembali" onclick="kembaliKeMenu()">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <h1 class="judul_halaman">You</h1>
+          <img
+            src="gambar/gambar3.jpg"
+            alt="Gambar 3"
+            class="gambar"
+            style="width: 300px; height: 300px"
+          />
+          <div class="ucapan3">
+            <p class="isiucapan3">
+              Kamu harus selalu bahagia!<br />
+              Lelah dan letih itu wajar. Semoga lelahmu terganti dengan hal-hal yang baik ya.
+              Aku selalu menunggu disini.
+            </p>
+          </div>
+        </section>
+
+        <section class="halaman4 dalemnya_halaman">
+          <button class="btn-kembali" onclick="kembaliKeMenu()">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <h1 class="judul_halaman">Galeri</h1>
+          <div class="galeri">
+            <img src="galeri/gambar1.png" alt="Galeri 1" class="foto-galeri" />
+            <img src="galeri/gambar2.png" alt="Galeri 2" class="foto-galeri" />
+            <img src="galeri/gambar3.png" alt="Galeri 3" class="foto-galeri" />
+            <video class="foto-galeri" muted>
+              <source src="galeri/video1.mp4" type="video/mp4" />
+            </video>
+            <video class="foto-galeri" muted>
+              <source src="galeri/video2.mp4" type="video/mp4" />
+            </video>
+            <video class="foto-galeri" muted>
+              <source src="galeri/video3.mp4" type="video/mp4" />
+            </video>
+            <video class="foto-galeri" muted>
+              <source src="galeri/video4.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="lightbox" id="lightbox">
+            <div class="lightbox-content"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="js/script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const today = new Date();
+        const tanggal = today.getDate();
+        const bulan = today.getMonth();
+
+        if (tanggal === 2 && bulan === 9) {
+          document.body.classList.add("ultah-theme");
+
+          const kontener2 = document.getElementById("kontener2");
+          const kontener3 = document.getElementById("kontener3");
+          const ucapan = document.getElementById("ucapan");
+          const isiUcapan = document.getElementById("isiucapan");
+          const judul = document.querySelector(".judul_ini");
+
+          if (ucapan) {
+            ucapan.textContent = "Happy Birthday Lintang Kinasih";
+          }
+
+          if (isiUcapan) {
+            isiUcapan.innerHTML = `
+            Wish you all the best<br>
+           Page ini bakal tiap tahun ngucapin kamu ultah loh!<br><br>
+           Mungkin tidak banyak kata yang aku ucapkan<br>
+           Semoga semakin bertambahnya usia dan dewasanya kamu,
+           Semoga kamu menjadi pribadi yang lebih baik lagi, dan cita-cita yang disegerakan tercapai<br><br>
+           Selamat Ulang Tahun Wanita tersayang💓<br><br>
+           Kamu selalu punya tempat spesial di hati aku<br><br>
+            #Ehanalwayssupportu.
+          `;
+          }
+
+          if (judul) {
+            judul.textContent = "Special Day";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

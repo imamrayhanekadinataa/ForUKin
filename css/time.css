@@ -1,0 +1,41 @@
+.kontener3.siang {
+    color: #141414;
+  }
+  
+  .kontener3.siang .judul_ini,
+  .kontener3.siang .ucapan,
+  .kontener3.siang .isiucapan,
+  .kontener3.siang .preview-teks {
+    color: #141414;
+  }
+  
+  .kontener3.siang .tombol-modal {
+    color: #141414;
+  }
+  
+  
+  .kontener3.malam .judul_ini,
+  .kontener3.malam .ml1,
+  .kontener3.malam .ml2,
+  .kontener3.malam .ucapan,
+  .kontener3.malam .isiucapan,
+  .kontener3.malam .preview-teks {
+    color: #ffffff;
+    background: none;
+  }
+  
+  .kontener3.malam .tombol-modal {
+    color: #ffffff;
+  }
+  
+  .kontener3.malam .hamburger span,
+  .kontener3.malam .ml1 .line1,
+  .kontener3.malam .ml1 .line2 {
+    background-color: #ffffff;
+  }
+  
+  .kontener3.malam .dropdown button {
+    background-color: #40404038 !important;
+    border-color: #ffffff;
+  }
+  
